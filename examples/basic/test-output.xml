@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="2" time="0.051" timestamp="2020-05-24T15:38:02.092914"><testcase classname="test_str" name="test_lower" time="0.001"></testcase><testcase classname="test_str" name="test_upper" time="0.001"><failure message="AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="2" time="0.057" timestamp="2020-05-24T16:21:41.623921"><testcase classname="test_str" name="test_lower" time="0.001"></testcase><testcase classname="test_str" name="test_upper" time="0.001"><failure message="AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
   - FoO
-  + FOO">&gt;   ???
-E   AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
-E     - FoO
-E     + FOO
+  + FOO">def test_upper():
+&gt;       assert &quot;foo&quot;.upper() == &quot;FoO&quot;
+E       AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
+E         - FoO
+E         + FOO
 
-/home/spencer/nobackup/test_status_server/examples/basic/test_str.py:5: AssertionError</failure></testcase></testsuite></testsuites>
+test_str.py:5: AssertionError</failure></testcase></testsuite></testsuites>
