@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="2" time="0.041" timestamp="2020-05-24T11:03:33.125155"><testcase classname="test_str" name="test_lower" time="0.001"></testcase><testcase classname="test_str" name="test_upper" time="0.001"><failure message="AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
+  - FoO
+  + FOO">def test_upper():
+&gt;       assert &quot;foo&quot;.upper() == &quot;FoO&quot;
+E       AssertionError: assert &apos;FOO&apos; == &apos;FoO&apos;
+E         - FoO
+E         + FOO
+
+test_str.py:5: AssertionError</failure></testcase></testsuite></testsuites>
