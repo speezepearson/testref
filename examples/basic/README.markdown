@@ -13,5 +13,5 @@ To regenerate the XML test-summary file, run
 ``` {.bash}
     pytest --junit-xml=test-output.xml
     python -m test_status_server.parse_pytest_xunit2 test-output.xml
-    pandoc README.src.markdown --filter ../../pandoc_filter -o README.markdown
+    pandoc README.src.markdown --filter ../../pandoc_filter -o README.html
 ```
