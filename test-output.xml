@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="1" time="0.242" timestamp="2020-05-24T13:25:21.329493"><testcase classname="test_readme" name="test_exists_on_pypi" time="0.077"></testcase></testsuite></testsuites>
