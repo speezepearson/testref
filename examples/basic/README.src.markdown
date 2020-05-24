@@ -2,15 +2,11 @@ A maximally simple usage of `test_status_server`.
 
 It has two test-cases:
 
--   `test_lower`, which passes
-    [![](testinfo/test_str/test_lower.png)](testinfo/test_str/test_lower.html)
--   `test_upper`, which also passes
-    [![](testinfo/test_str/test_upper.png)](testinfo/test_str/test_upper.html)
-    (&lt;-- just kidding, it doesn't!)
+- `test_lower`, which passes ![](testinfo:test_str/test_lower)
+- `test_upper`, which also passes ![](testinfo:test_str/test_upper) (<-- just kidding, it doesn't!)
 
 To regenerate the XML test-summary file, run
-
-``` {.bash}
+```bash
     pytest --junit-xml=test-output.xml
     python -m test_status_server.parse_pytest_xunit2 test-output.xml
     pandoc README.src.markdown --filter ../../pandoc_filter -o README.markdown
