@@ -1,0 +1,9 @@
+Failures: <ul><li><pre>def test_approx_fib_always_within_1_percent():
+        for n in [0, 1, 5, 10, 100, 1000, 1_000_000]:
+&gt;           assert abs(1 - approx_fib(n)/fib(n)) &lt; 0.01
+E           assert 0.2763932022500235 &lt; 0.01
+E            +  where 0.2763932022500235 = abs((1 - (0.7236067977499765 / 1)))
+E            +    where 0.7236067977499765 = approx_fib(0)
+E            +    and   1 = fib(0)
+
+fibonacci/test_fib.py:15: AssertionError</pre></li></ul>

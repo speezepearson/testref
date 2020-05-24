@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="2" time="0.029" timestamp="2020-05-24T15:53:18.466836"><testcase classname="examples.fibonacci.fibonacci.test_fib" name="test_zero_indexed_goes_1_1_2_3" time="0.001"></testcase><testcase classname="examples.fibonacci.fibonacci.test_fib" name="test_approx_fib" time="0.001"></testcase></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="spencer-XPS-13-9343" name="pytest" skipped="0" tests="3" time="0.065" timestamp="2020-05-24T16:00:55.743446"><testcase classname="examples.fibonacci.fibonacci.test_fib" name="test_zero_indexed_goes_1_1_2_3" time="0.001"></testcase><testcase classname="examples.fibonacci.fibonacci.test_fib" name="test_approx_fib" time="0.001"></testcase><testcase classname="examples.fibonacci.fibonacci.test_fib" name="test_approx_fib_always_within_1_percent" time="0.001"><failure message="assert 0.2763932022500235 &lt; 0.01
+ +  where 0.2763932022500235 = abs((1 - (0.7236067977499765 / 1)))
+ +    where 0.7236067977499765 = approx_fib(0)
+ +    and   1 = fib(0)">def test_approx_fib_always_within_1_percent():
+        for n in [0, 1, 5, 10, 100, 1000, 1_000_000]:
+&gt;           assert abs(1 - approx_fib(n)/fib(n)) &lt; 0.01
+E           assert 0.2763932022500235 &lt; 0.01
+E            +  where 0.2763932022500235 = abs((1 - (0.7236067977499765 / 1)))
+E            +    where 0.7236067977499765 = approx_fib(0)
+E            +    and   1 = fib(0)
+
+fibonacci/test_fib.py:15: AssertionError</failure></testcase></testsuite></testsuites>
