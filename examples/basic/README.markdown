@@ -1,4 +1,4 @@
-A maximally simple usage of `test_status_server`.
+A maximally simple usage of `testref`.
 
 It has two test-cases:
 
@@ -12,6 +12,6 @@ To regenerate the XML test-summary file, run
 
 ``` {.bash}
     pytest --junit-xml=test-output.xml
-    python -m test_status_server.parse_pytest_xunit2 test-output.xml
+    python -m testref.parse_pytest_xunit2 test-output.xml
     pandoc README.src.markdown --filter ../../pandoc_filter -o README.html
 ```

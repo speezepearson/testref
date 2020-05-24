@@ -5,7 +5,7 @@ import urllib.parse
 
 from pandocfilters import toJSONFilter, Link, Image
 
-from test_status_server import TestName
+from testref import TestName
 
 CWD = Path.cwd()
 TESTINFO_DIR = CWD / 'testinfo'
