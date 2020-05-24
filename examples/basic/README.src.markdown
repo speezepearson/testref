@@ -15,5 +15,5 @@ To regenerate everything, just run:
 ```bash
     pytest --junit-xml=test-output.xml
     python -m testref.parse_pytest_xunit2 test-output.xml
-    pandoc README.src.markdown --filter ../../pandoc_filter -o README.html
+    pandoc README.src.markdown --filter testref-pandoc -o README.markdown
 ```
