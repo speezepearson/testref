@@ -6,14 +6,13 @@ It has two test-cases:
     [![](testinfo/test_str/test_lower.png)](testinfo/test_str/test_lower.html)
 -   `test_upper`, which also passes
     [![](testinfo/test_str/test_upper.png)](testinfo/test_str/test_upper.html)
-    (&lt;-- just kidding, it doesn't!)
 
 \^ The list above, which you can see in
-[`README.src.markdown`](README.src.markdown) was written as:
+[`README.src.markdown`](README.src.markdown), was written as:
 
 ``` {.markdown}
 - `test_lower`, which passes ![](test:test_str/test_lower)
-- `test_upper`, which also passes ![](test:test_str/test_upper) (<-- just kidding, it doesn't!)
+- `test_upper`, which also passes ![](test:test_str/test_upper)
 ```
 
 To regenerate everything, just run:

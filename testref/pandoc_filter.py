@@ -9,7 +9,7 @@ from testref import TestName
 
 CWD = Path.cwd()
 TESTINFO_DIR = CWD / 'testinfo'
-TEST_NAMES = {str(path.relative_to(TESTINFO_DIR).with_suffix("")) for path in CWD.glob("**/*.png")}
+TEST_NAMES = {str(path.relative_to(TESTINFO_DIR).with_suffix("")) for path in TESTINFO_DIR.glob("**/*.png")}
 
 def linkify_tests(key, value, format, meta):
     if key == 'Image':
@@ -31,5 +31,8 @@ def linkify_tests(key, value, format, meta):
             img = Image(attr, content, (f"testinfo/{name}.png", title))
             return Link(attr, [img], (f"testinfo/{name}.html", title))
 
-if __name__ == "__main__":
+def main():
   toJSONFilter(linkify_tests)
+
+if __name__ == "__main__":
+    main()

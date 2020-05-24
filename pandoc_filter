@@ -1,6 +1,0 @@
-#!/bin/bash
-
-HERE="$(dirname "$(python -c 'import sys, os; print(os.path.abspath(os.path.realpath(sys.argv[1])))' "${BASH_SOURCE[0]}" )")"
-BASENAME="$(basename "${BASH_SOURCE[0]}")"
-
-python "$HERE/$BASENAME.py" "$@"
